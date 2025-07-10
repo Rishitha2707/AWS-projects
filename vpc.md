@@ -104,18 +104,34 @@ Resources:
 
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/9b829ce1-842c-432c-89aa-ccbebed62d72" />
 
+
+
+
 Check if all the resources from the stack are created successfully.
 1. Your VPC
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/a606c7f9-28c1-4f0c-89f6-d954893e62f6" />
 
+
+
+
 2. Subnets
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/cbb4173f-6ae7-43cd-974e-780f1cf67670" />
+
+
+
 
 3. Route tables
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/7cb597a6-e2cc-4f32-b152-f285a5379895" />
 
+
+
+
 4. Internet gateway
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/26eee064-2b69-465b-97b4-b945a1d53139" />
+
+
+
+
 
 
 Create a NAT gateway and attach it to the Private Route table.
