@@ -4,7 +4,8 @@ Title: Deploy Java Web Application in AWS using CloudFormation
 
 Save your YAML script locally as vpc.yaml
 
-   AWSTemplateFormatVersion: 2010-09-09
+'''bash
+AWSTemplateFormatVersion: 2010-09-09
 Description: VPC template
 # Resources section
 Resources:
@@ -94,7 +95,7 @@ Resources:
       RouteTableId: !Ref myPUBRouteTable
       DestinationCidrBlock: 0.0.0.0/0
       GatewayId: !Ref  myInternetGateway
-
+'''bash
 
 Check if all the resources from the stack are created successfully.
 1. Your VPC
