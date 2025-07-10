@@ -353,6 +353,19 @@ Ensure you can access the app at:
 http://<public-ec2-ip>:8080/LoginWebApp/
 ```
 
+
+
+![Image](https://github.com/user-attachments/assets/7622599e-d133-4e31-83dd-31f688efe40e)
+<img width="1512" height="982" alt="Image" src="https://github.com/user-attachments/assets/ffcd4eab-88b9-4d7b-a707-4567cdd50bfc" />
+
+
+
+
+
+
+
+
+
 Test form submission and data getting saved into the DB by checking the USER table in the DB.
 
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/db0df2ae-c4e6-4d94-b69d-37aa8c35a3ff" />
