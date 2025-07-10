@@ -96,15 +96,33 @@ Resources:
       DestinationCidrBlock: 0.0.0.0/0
       GatewayId: !Ref  myInternetGateway
 ```
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/2a5f8be3-d4f6-40fd-9599-2c698ef3161a" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/2f562712-3dba-49ad-a774-aafc88b3fcf0" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/9e457642-9c30-4876-9595-bea58f63d9fe" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/9b829ce1-842c-432c-89aa-ccbebed62d72" />
 
 Check if all the resources from the stack are created successfully.
 1. Your VPC
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/a606c7f9-28c1-4f0c-89f6-d954893e62f6" />
+
 2. Subnets
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/cbb4173f-6ae7-43cd-974e-780f1cf67670" />
+
 3. Route tables
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/7cb597a6-e2cc-4f32-b152-f285a5379895" />
+
 4. Internet gateway
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/26eee064-2b69-465b-97b4-b945a1d53139" />
+
 
 Create a NAT gateway and attach it to the Private Route table.
 Allocate an Elastic IP to the gateway.
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/b3887025-3ea1-41d5-9850-aadc5928c28b" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/f004b29f-5d16-41c2-98bb-4d760d1abd2b" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/2e7e607a-6a31-4fb1-a53c-d7b38a8d588f" />
 
 Note: YOu have to assign it to the Public server and attach it to the private route table.
 
