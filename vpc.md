@@ -321,3 +321,5 @@ http://<public-ec2-ip>:8080/LoginWebApp/
 
 Test form submission and data getting saved into the DB by checking the USER table in the DB.
 
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/db0df2ae-c4e6-4d94-b69d-37aa8c35a3ff" />
+
