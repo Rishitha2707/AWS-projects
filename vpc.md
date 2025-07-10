@@ -123,16 +123,26 @@ Use a private security group that allows SSH access only from the public EC2 ins
 
 🔒 4. Jump Host Configuration
 1. Copy your .pem from your local to server using: 
+       ```
         scp -i .pem .pem host-server@publicIP
+       ```
+   
+3. Go to your public server and check if the file is copied to the server using:
+        ```
+         ls
+        ```
+   
+5. Change the permission of the .pem using:
 
-2. Go to your public server and check if the file is copied to the server using:
-        ls
+        ```
+        chmod 400 .pem
+        ```
+   
+7. Connect the private server using jump host
 
-3. Change the permission of the .pem using:
-       chmod 400 .pem
-
-4. Connect the private server using jump host
-       ssh -i "your-key.pem" ec2-user@<Private_EC2_Private_IP>
+        ```
+        ssh -i "your-key.pem" ec2-user@<Private_EC2_Private_IP>
+        ```
 
 Now you are connected to the Private instance.
 
@@ -251,15 +261,15 @@ A .war file has been generated in the target directory.
 
 Deploy .war to Tomcat:
     
-    ```
+    
     cp target/*.war /opt/tomcat/webapps/
-    ```
+    
 
 Start Tomcat:
     
-    ```
+    
     /opt/tomcat/bin/startup.sh
-    ```
+    
 
     
 🛢️ 6. MySQL Setup on Private EC2
@@ -271,23 +281,23 @@ Start Tomcat:
       
    b. Install MySQL Server:
       
-      ```
+      
       sudo yum update -y
       sudo yum install mysql -y
-      ```
+      
 
       
    c. Create mysql environment by connection with rds end point:
-      ```
+      
       mysql -h <hostname endpoint> -u admin -p
-      ```
+      
       
       enter password
       Your mysql environment is created.
 
    d. Create database, and schema:
       
-      ```
+      
       create database jwt;
       use jwt;
       CREATE TABLE USER (
@@ -300,7 +310,7 @@ Start Tomcat:
         regdate DATE NOT NULL,
         PRIMARY KEY (id)
         ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-      ```
+    
     Now your database is created to store the data.
 
 ✅ Final Testing
