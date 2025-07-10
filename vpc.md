@@ -250,27 +250,44 @@ Build the Java code:
 A .war file has been generated in the target directory.
 
 Deploy .war to Tomcat:
+    
+    ```
     cp target/*.war /opt/tomcat/webapps/
+    ```
 
 Start Tomcat:
+    
+    ```
     /opt/tomcat/bin/startup.sh
+    ```
 
+    
 🛢️ 6. MySQL Setup on Private EC2
  
    a. SSH into private EC2 from public EC2:
+      ```
       ssh -i "your-key.pem" ec2-user@<Private_EC2_Private_IP>
-
+      ```
+      
    b. Install MySQL Server:
+      
+      ```
       sudo yum update -y
       sudo yum install mysql -y
+      ```
 
+      
    c. Create mysql environment by connection with rds end point:
+      ```
       mysql -h <hostname endpoint> -u admin -p
-
+      ```
+      
       enter password
       Your mysql environment is created.
 
    d. Create database, and schema:
+      
+      ```
       create database jwt;
       use jwt;
       CREATE TABLE USER (
@@ -283,12 +300,14 @@ Start Tomcat:
         regdate DATE NOT NULL,
         PRIMARY KEY (id)
         ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
+      ```
     Now your database is created to store the data.
 
 ✅ Final Testing
 Ensure you can access the app at:
+```
 http://<public-ec2-ip>:8080/LoginWebApp/
+```
 
 Test form submission and data getting saved into the DB by checking the USER table in the DB.
 
